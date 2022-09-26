@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Барбершоп "Бородинский"</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20220926214223" />
+  <link rel="stylesheet" href="./styles/style.min.css?_v=20220926214223">
+</head>
+
+<body>
+  <div class="overlay overlay-additional"></div>
+  <header class="header">
+    <div class="container">
+      <nav class="header-nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="#">О нас</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Частые вопросы</a>
+          </li>
+        </ul>
+        <ul class="user-nav-list">
+          <li class="user-nav-item">
+            <button class="user-nav-button user-nav-button-search window-element-open" type="button"></button>
+            <div class="search-window window-element">
+              <input class="field" type="text" placeholder="Поиск по странице">
+              <button class="search-window-button" type="button"></button>
+            </div>
+          </li>
+          <li class="user-nav-item">
+            <button class="user-nav-button user-nav-button-cart window-element-open" type="button"></button>
+            <div class="cart-window window-element">
+              <div class="cart-quantity">
+                <span class="cart-quantity-number">2</span>
+              </div>
+              <h2 class="cart-window-title section-title">Корзина</h2>
+              <ul class="cart-list">
+                <li class="cart-item">
+                  <div class="cart-item-info">
+                    <h3 class="cart-item-title">Стрижка машинкой</h3>
+                    <p class="cart-item-price">800 ₽</p>
+                  </div>
+                  <button class="cart-item-delete" type="button"></button>
+                </li>
+                <li class="cart-item">
+                  <div class="cart-item-info">
+                    <h3 class="cart-item-title">Стрижка усов</h3>
+                    <p class="cart-item-price">1200 ₽</p>
+                  </div>
+                  <button class="cart-item-delete" type="button"></button>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="user-nav-item">
+            <button class="user-nav-button user-nav-button-login login-window-open" type="button">Вход</button>
+          </li>
+        </ul>
+      </nav>
+      <img class="header-logo-mobile" src="images/header-logo.svg" alt="">
+      <button class="burger" type="button"></button>
+    </div>
+    <div class="mobile-menu">
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="#">О нас</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="catalog.html">Каталог</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="#">Частые вопросы</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link cart-mobile-open" href="#">Корзина</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link login-window-open" href="#">Войти</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="main main-index">
+    <section class="advantages">
+      <div class="container">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <div class="advantages-logo">
+          <img src="images/advantages-logo.svg" alt="Логотип компании.">
+        </div>
+        <ul class="advantages-list">
+          <li class="advantages-item">
+            <h3 class="advantages-item-title">Быстро</h3>
+            <p class="advantages-item-descr">Мы делаем свою работу быстро! Два часа пролетят незаметно, и вы
+              — счастливый обладатель стильной стрижки-минутки!</p>
+          </li>
+          <li class="advantages-item">
+            <h3 class="advantages-item-title">Круто</h3>
+            <p class="advantages-item-descr">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду
+              футбола или кино! Во всяком случае внешне.</p>
+          </li>
+          <li class="advantages-item">
+            <h3 class="advantages-item-title">Дорого</h3>
+            <p class="advantages-item-descr">Наши мастера — профессионалы своего дела и не могут стоить
+              дешево. К тому же, разве цена не даёт определённый статус?</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container">
+        <div class="services-col">
+          <div class="popular-services-content">
+            <h2 class="section-title services-title">Популярные услуги</h2>
+            <ul class="services-list">
+              <li class="services-item">
+                <h3 class="services-item-title">Стрижка машинкой</h3>
+                <span class="services-item-divider"></span>
+                <span class="services-item-price">800 ₽</span>
+              </li>
+              <li class="services-item">
+                <h3 class="services-item-title">Стрижка усов</h3>
+                <span class="services-item-divider"></span>
+                <span class="services-item-price">1200 ₽</span>
+              </li>
+              <li class="services-item">
+                <h3 class="services-item-title">Груминг</h3>
+                <span class="services-item-divider"></span>
+                <span class="services-item-price">400 ₽</span>
+              </li>
+              <li class="services-item">
+                <h3 class="services-item-title">Комплексная стрижка</h3>
+                <span class="services-item-divider"></span>
+                <span class="services-item-price">2300 ₽</span>
+              </li>
+            </ul>
+            <a class="button button-with-arrow" href="#">Посмотреть все</a>
+          </div>
+        </div>
+        <div class="services-col">
+          <h2 class="section-title gallery-title">Фотогалерея</h2>
+          <div class="swiper">
+
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper-slide-content">
+                  <img class="swiper-image" src="images/slider-photo-1.jpg" width="390" height="250">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-content">Photo 2</div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-content">Photo 3</div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-content">Photo 4</div>
+              </div>
+            </div>
+            <div class="swiper-buttons">
+              <div class="swiper-button swiper-button-prev">
+                <svg height="16" width="16">
+                  <use xlink:href="images/icons/icons.svg#button-arrow"></use>
+                </svg>
+              </div>
+              <div class="swiper-button swiper-button-next">
+                <svg height="16" width="16">
+                  <use xlink:href="images/icons/icons.svg#button-arrow"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-us">
+      <div class="container">
+        <div class="about-us-col">
+          <div class="about-us-content">
+            <h2 class="section-title about-us-title">Контакты</h2>
+            <h3 class="about-us-title-additional">Барбершоп «Бородинский»</h3>
+            <p class="about-us-address">Санкт-Петербург, набережная реки Карповки, 5</p>
+            <a class="about-us-phone" href="#">+7 800 555-86-28</a>
+            <h3 class="about-us-title-additional">Время работы</h3>
+            <p class="about-us-schedule">
+              пн—пт: с 10:00 до 22:00
+            </p>
+            <p class="about-us-schedule">
+              сб—вс: с 10:00 до 19:00
+            </p>
+            <div class="about-us-links">
+              <a class="button" href="#">Как проехать</a>
+              <a class="button button-additional" href="#">Обратная связь</a>
+            </div>
+          </div>
+        </div>
+        <div class="about-us-col appointment">
+          <h2 class="section-title appointment-title">Записаться</h2>
+          <p class="appointment-descr">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения
+            брони.</p>
+          <form class="appointment-form" action="#">
+            <fieldset class="appointment-form-fieldset">
+              <legend class="appointment-form-legend">
+                Дата
+                <span class="appointment-form-tooltip">
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M6 12C9.31371 12 12 9.31371 12 6C12 2.68629 9.31371 0 6 0C2.68629 0 0 2.68629 0 6C0 9.31371 2.68629 12 6 12ZM7.27273 3.27273C7.27273 3.97564 6.70291 4.54545 6 4.54545C5.29709 4.54545 4.72727 3.97564 4.72727 3.27273C4.72727 2.56982 5.29709 2 6 2C6.70291 2 7.27273 2.56982 7.27273 3.27273ZM7.27273 5.5V9.00001H4.72727V5.5H7.27273Z"
+                      />
+                  </svg>
+                  <span class="appointment-form-tooltip-text">
+                    Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони
+                  </span>
+                </span>
+              </legend>
+              <input class="field" type="text" placeholder="01.01.2030">
+            </fieldset>
+            <fieldset class="appointment-form-fieldset">
+              <legend class="appointment-form-legend">
+                Время
+                <span class="appointment-form-tooltip">
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M6 12C9.31371 12 12 9.31371 12 6C12 2.68629 9.31371 0 6 0C2.68629 0 0 2.68629 0 6C0 9.31371 2.68629 12 6 12ZM7.27273 3.27273C7.27273 3.97564 6.70291 4.54545 6 4.54545C5.29709 4.54545 4.72727 3.97564 4.72727 3.27273C4.72727 2.56982 5.29709 2 6 2C6.70291 2 7.27273 2.56982 7.27273 3.27273ZM7.27273 5.5V9.00001H4.72727V5.5H7.27273Z"
+                      />
+                  </svg>
+                  <span class="appointment-form-tooltip-text">
+                    Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони
+                  </span>
+                </span>
+              </legend>
+              <input class="field" type="text" placeholder="07:00">
+            </fieldset>
+            <fieldset class="appointment-form-fieldset">
+              <legend class="appointment-form-legend">Телефон</legend>
+              <input class="field" type="text" placeholder="+7 912 345-67-89">
+            </fieldset>
+            <fieldset class="appointment-form-fieldset appointment-form-fieldset-name">
+              <legend class="appointment-form-legend">Ваше имя</legend>
+              <input class="field" type="text">
+            </fieldset>
+            <button class="button" type="submit">Записаться</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+        <div class="footer-col">
+            <img class="footer-logo" src="images/footer-logo.svg" alt="Логотип компании." width="187" height="24">
+            <address class="footer-address">
+                Санкт-Петербург, набережная
+                реки Карповки, 5
+            </address>
+            <a class="footer-phone" href="#">+7 800 555-86-28</a>
+            <a class="footer-phone" href="#">Как нас найти?</a>
+        </div>
+        <div class="footer-col">
+            <h3 class="footer-title">Получайте лучшие предложения</h3>
+            <form class="footer-form" action="#">
+                <input class="field" type="email" placeholder="question@htmlacademy.ru">
+                <button class="button footer-form-button" type="submit"></button>
+            </form>
+        </div>
+        <div class="footer-col">
+            <h3 class="footer-title">Давайте дружить</h3>
+            <ul class="footer-social">
+                <li class="footer-social-item">
+                    <a class="footer-social-link footer-social-link-twitter" href="#"></a>
+                </li>
+                <li class="footer-social-item">
+                    <a class="footer-social-link footer-social-link-vk" href="#"></a>
+                </li>
+                <li class="footer-social-item">
+                    <a class="footer-social-link footer-social-link-insta" href="#"></a>
+                </li>
+            </ul>
+            <p class="footer-remark">Сделано в <a class="footer-htmlacademy" href="#">.html academy</a></p>
+        </div>
+    </div>
+</footer>
+  <div class="modal-container">
+  <div class="modal">
+    <button class="modal-close"></button>
+    <h2 class="section-title modal-title">Личный кабинет</h2>
+    <form class="modal-form" action="#">
+      <input class="field" type="text" placeholder="Логин">
+      <input class="field" type="password" placeholder="Пароль">
+      <div class="modal-form-additional">
+        <label class="modal-form-label">
+          <input class="visually-hidden modal-form-remember-me" type="checkbox">
+          <span class="mark"></span>
+          <span class="remember-me">Запомнить меня</span>
+        </label>
+        <a class="modal-form-forgot-password" href="#">Забыл пароль</a>
+      </div>
+      <button class="button" type="submit">Войти</button>
+    </form>
+    <a class="button button-additional" href="#">Регистрация</a>
+  </div>
+</div>
+  <div class="cart-window cart-window-mobile">
+  <div class="cart-quantity">
+    <span class="cart-quantity-number">2</span>
+  </div>
+  <h2 class="cart-window-title section-title">Корзина</h2>
+  <ul class="cart-list">
+    <li class="cart-item">
+      <div class="cart-item-info">
+        <h3 class="cart-item-title">Стрижка машинкой</h3>
+        <p class="cart-item-price">800 ₽</p>
+      </div>
+      <button class="cart-item-delete" type="button"></button>
+    </li>
+    <li class="cart-item">
+      <div class="cart-item-info">
+        <h3 class="cart-item-title">Стрижка усов</h3>
+        <p class="cart-item-price">1200 ₽</p>
+      </div>
+      <button class="cart-item-delete" type="button"></button>
+    </li>
+  </ul>
+  <button class="button cart-close">Закрыть</button>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20220926214223"></script>
+  <script src="./js/script.js?_v=20220926214223"></script>
+  <script src="./js/swiper.js?_v=20220926214223"></script>
+</body>
+
+</html>
